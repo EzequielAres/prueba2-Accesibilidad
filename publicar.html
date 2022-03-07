@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Despositar un documento</title>
+	<title>Despositar un documento : Actividad 2</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -19,8 +19,7 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="clear"></div>
-	<section role="main" class="publicarFormulario">
+	<section role="main" class="publicarFormulario clear">
 		<h1>O2: despositar un documento</h1>
 		<p>Los campos marcados con * son obligatorios</p>
 		<form>
@@ -37,36 +36,36 @@
 				</select> 
 			</label>
 
-			 <label>Nombre del autor *
+			 <label for="nombre-del-autor">Nombre del autor *
 				<input type="text" name="nombre-del-autor" id="nombre-del-autor" placeholder="Escribe el nombre del autor" required pattern="[A-Za-z]+" minlength="2" maxlength="64">
 			 </label>
 
-			 <label>Primer apellido del autor *
+			 <label for="primer-apellido-autor">Primer apellido del autor *
 				<input type="text" name="primer-apellido-autor" id="primer-apellido-autor" placeholder="Escribe el primer apellido del autor" required pattern="[A-Za-z]+" minlength="2" maxlength="64">
 			 </label>
 
-			 <label>Segundo apellido del autor *
+			 <label for="segundo-apellidp-autor">Segundo apellido del autor *
 				<input type="text" name="segundo-apellido-autor" id="segundo-apellido-autor" placeholder="Escribe el segundo apellido del autor" required pattern="[A-Za-z]+" minlength="2" maxlength="64">
 			 </label>
 
-			 <label>Título del documento *
+			 <label for="titulo-documento">Título del documento *
 				<input type="text" name="titulo-documento" id="titulo-documento" placeholder="Escribe el título del documento" pattern="[A-Za-z]+" minlength="2" maxlength="64">
 			 </label>
 
-			 <label>Fecha de creación del documento *
+			 <label for="fecha-creacion-documento">Fecha de creación del documento *
 				<input type="date" name="fecha-creacion-documento" id="fecha-creacion-documento" required>
 			 </label>
 
 			 
 			 <fieldset class="radio">
 			 	<p>Editorial</p>
-			 	<label>
+			 	<label for="editorial">
 					<input type="radio" name="editorial" id="editorial" value="uoc" checked>
 					 Universidad Oberta de Cataluña
 				</label>
 			 </fieldset>
 
-			 <label>Tipo de documento *
+			 <label for="tipo-documento">Tipo de documento *
 				<select name="tipo-documento">
 					<optgroup label="documento-tipo">
 						<option value="">Selecciona un tipo</option>
@@ -87,7 +86,7 @@
 				</select> 
 			</label>
 
-			 <label>Idioma del documento *
+			 <label for="idioma-documento">Idioma del documento *
 				<select name="idioma-documento">
 					<optgroup label="documento-idioma">
 						<option value="">Selecciona un tipo</option>
@@ -104,15 +103,15 @@
 				</select>
 			</label>
 
-			 <label>Breve resumen del documento *
+			 <label for="resumen">Breve resumen del documento *
 				<textarea name="resumen" id="resumen" cols="25" rows="3"></textarea>
 			 </label> 
 
-			 <label>Enviar documento *
+			 <label for="enviar-documento">Enviar documento *
 				<input type="file" name="enviar-documento" id="enviar-documento">
 			 </label>
 
-			 <label>Acepta la licencia de publicación del documento *
+			 <label for="licencia">Acepta la licencia de publicación del documento *
 				<select name="licencia">
 					<optgroup label="documento-licencia">
 						<option value="">Selecciona un tipo</option>
@@ -126,20 +125,20 @@
 			</label>
 
 			<h2>Datos de contacto del remitente</h2>
-			 <label>Nombre y apellidos *
+			 <label for="nombre-completo">Nombre y apellidos *
 				<input type="text" name="nombre-completo" id="nombre-completo" placeholder="Escribe el nombre completo">
 			 </label>
 
 			 <fieldset class="radio">
 				 <p>Por favor selecciones una de las dos opciones siguientes: </p>
 				 <div>
-				 	<label>
+				 	<label for="genero">
 						<input type="radio" name="genero" id="hombre" value="hombre" > 
 						Hombre
 					</label>
 				 </div>
 				 <div>
-				 	<label>
+				 	<label for="genero">
 						<input type="radio" name="genero" id="mujer" value="mujer" >
 						Mujer
 					</label>
@@ -148,47 +147,47 @@
 			 <fieldset class="radio">
 				 <p>Tipo de documento de indentidad </p>
 				 <div>
-				 	<label>
+				 	<label for="documento">
 						<input type="radio" name="documento" id="nif" value="nif" >
 						NIF
 					</label>
 				 </div>
 				 <div>
-				 	<label>
+				 	<label for="documento">
 						<input type="radio" name="documento" id="nie" value="nie" >
 						NIE
 					</label>
 				 </div>
 				 <div>
-				 	<label>
+				 	<label for="documento">
 						<input type="radio" name="documento" id="pass" value="pass" >
 						PASS
 					</label>
 				 </div>
 			 </fieldset>
 
-			 <label>Número de documento *
+			 <label for="numero-documento">Número de documento *
 				<input type="text" name="numero-documento" id="numero-documento" placeholder="Escribe el número de documento elegido" required pattern="[A-Za-z]+" minlength="2" maxlength="128">
 			 </label>
 
-			 <label>Correo electrónico *
+			 <label for="email">Correo electrónico *
 				<input type="email" name="email" id="email" placeholder="Escribe el correo electrónico" required>
 			 </label>
 
-			 <label>Teléfono (opcional)
+			 <label for="telefono">Teléfono (opcional)
 				<input type="tel" name="telefono" id="telefono" placeholder="Escribe el teléfono" pattern="[0-9]+" minlength="9" maxlength="10">
 			 </label>
 			 
 			 <fieldset class="radio">
 				 <p>Idioma para la respuesta *</p>
 				 <div>
-				 	<label>
+				 	<label for="idioma-respuesta">
 						<input type="radio" name="idioma-respuesta" id="castellano" value="castellano" >
 						Castellano
 					</label>
 				 </div>
 				 <div>
-				 	<label>
+				 	<label for="idioma-respuesta">
 						<input type="radio" name="idioma-respuesta" id="catalan" value="calatan" >
 						Catalán
 					</label>
@@ -197,14 +196,14 @@
 			 <hr>
 
 			 <fieldset>
-			  <label>
+			  <label for="politica-de-privacidad">
 				<input type="checkbox" name="politica-de-privacidad" id="politica-de-privacidad" required>
 				He leído y acepto la política de privacidad y el aviso legal *
 			  </label>
 			 </fieldset>
 			 
 			 <fieldset>
-			  <label>
+			  <label for="ser-informado">
 				  <input type="checkbox" name="ser-informado" id="ser-informado">
 				  Dese ser informado sobre las nuevas incorporaciones al repositorio
 				</label>
@@ -214,7 +213,6 @@
 		</form>
 
 	</section>
-	<div class="clear"></div>
 	<footer>
 			<p>Trabajo realizado por Alejandro Carmona Martos, para la asignatura HTML y CSS</p>
 			<p>Primer semestre del curso 2018-2019</p>		
