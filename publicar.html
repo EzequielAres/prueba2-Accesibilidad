@@ -25,7 +25,7 @@
 		<form>
 			<h2>Datos de la publicación</h2>
 			
-			<label for="comunidad-documento">Comunidad donde debe publicarse *
+			<label for="comunidad-documento" aria-required="true">Comunidad donde debe publicarse *
 				<select id="comunidad-documento" name="comunidad-documento">
 					<optgroup label="documento-comunidad">
 						<option value="docencia">Docencia</option>
@@ -36,36 +36,36 @@
 				</select> 
 			</label>
 
-			 <label for="nombre-del-autor">Nombre del autor *
+			 <label for="nombre-del-autor" aria-required="true">Nombre del autor *
 				<input type="text" name="nombre-del-autor" id="nombre-del-autor" placeholder="Escribe el nombre del autor" required pattern="[A-Za-z]+" minlength="2" maxlength="64">
 			 </label>
 
-			 <label for="primer-apellido-autor">Primer apellido del autor *
+			 <label for="primer-apellido-autor" aria-required="true">Primer apellido del autor *
 				<input type="text" name="primer-apellido-autor" id="primer-apellido-autor" placeholder="Escribe el primer apellido del autor" required pattern="[A-Za-z]+" minlength="2" maxlength="64">
 			 </label>
 
-			 <label for="segundo-apellido-autor">Segundo apellido del autor *
+			 <label for="segundo-apellido-autor" aria-required="true">Segundo apellido del autor *
 				<input type="text" name="segundo-apellido-autor" id="segundo-apellido-autor" placeholder="Escribe el segundo apellido del autor" required pattern="[A-Za-z]+" minlength="2" maxlength="64">
 			 </label>
 
-			 <label for="titulo-documento">Título del documento *
+			 <label for="titulo-documento" aria-required="true">Título del documento *
 				<input type="text" name="titulo-documento" id="titulo-documento" placeholder="Escribe el título del documento" pattern="[A-Za-z]+" minlength="2" maxlength="64">
 			 </label>
 
-			 <label for="fecha-creacion-documento">Fecha de creación del documento *
+			 <label for="fecha-creacion-documento" aria-required="true">Fecha de creación del documento *
 				<input type="date" name="fecha-creacion-documento" id="fecha-creacion-documento" required>
 			 </label>
 
 			 
 			 <fieldset class="radio">
 			 	<p>Editorial</p>
-			 	<label for="editorial">
+			 	<label for="editorial" aria-required="false">
 					<input type="radio" name="editorial" id="editorial" value="uoc" checked>
 					 Universidad Oberta de Cataluña
 				</label>
 			 </fieldset>
 
-			 <label for="tipo-documento">Tipo de documento *
+			 <label for="tipo-documento" aria-required="true">Tipo de documento *
 				<select id="tipo-documento" name="tipo-documento">
 					<optgroup label="documento-tipo">
 						<option value="">Selecciona un tipo</option>
@@ -86,7 +86,7 @@
 				</select> 
 			</label>
 
-			 <label for="idioma-documento">Idioma del documento *
+			 <label for="idioma-documento" aria-required="true">Idioma del documento *
 				<select id="idioma-documento" name="idioma-documento">
 					<optgroup label="documento-idioma">
 						<option value="">Selecciona un tipo</option>
@@ -103,15 +103,15 @@
 				</select>
 			</label>
 
-			 <label for="resumen">Breve resumen del documento *
+			 <label for="resumen" aria-required="true">Breve resumen del documento *
 				<textarea name="resumen" id="resumen" cols="25" rows="3"></textarea>
 			 </label> 
 
-			 <label for="enviar-documento">Enviar documento *
+			 <label for="enviar-documento" aria-required="true">Enviar documento *
 				<input type="file" name="enviar-documento" id="enviar-documento">
 			 </label>
 
-			 <label for="licencia">Acepta la licencia de publicación del documento *
+			 <label for="licencia" aria-required="true">Acepta la licencia de publicación del documento *
 				<select id="licencia" name="licencia">
 					<optgroup label="documento-licencia">
 						<option value="">Selecciona un tipo</option>
@@ -125,20 +125,20 @@
 			</label>
 
 			<h2>Datos de contacto del remitente</h2>
-			 <label for="nombre-completo">Nombre y apellidos *
+			 <label for="nombre-completo" aria-required="true">Nombre y apellidos *
 				<input type="text" name="nombre-completo" id="nombre-completo" placeholder="Escribe el nombre completo">
 			 </label>
 
 			 <fieldset class="radio">
 				 <p>Por favor selecciones una de las dos opciones siguientes: </p>
 				 <div>
-				 	<label for="hombre">
+				 	<label for="hombre" aria-required="false">
 						<input type="radio" name="genero" id="hombre" value="hombre" > 
 						Hombre
 					</label>
 				 </div>
 				 <div>
-				 	<label for="mujer">
+				 	<label for="mujer" aria-required="false">
 						<input type="radio" name="genero" id="mujer" value="mujer" >
 						Mujer
 					</label>
@@ -147,69 +147,67 @@
 			 <fieldset class="radio">
 				 <p>Tipo de documento de indentidad </p>
 				 <div>
-				 	<label for="nif">
+				 	<label for="nif" aria-required="false">
 						<input type="radio" name="documento" id="nif" value="nif" >
 						NIF
 					</label>
 				 </div>
 				 <div>
-				 	<label for="nie">
+				 	<label for="nie" aria-required="false">
 						<input type="radio" name="documento" id="nie" value="nie" >
 						NIE
 					</label>
 				 </div>
 				 <div>
-				 	<label for="pass">
+				 	<label for="pass" aria-required="false">
 						<input type="radio" name="documento" id="pass" value="pass" >
 						PASS
 					</label>
 				 </div>
 			 </fieldset>
 
-			 <label for="numero-documento">Número de documento *
+			 <label for="numero-documento" aria-required="true">Número de documento *
 				<input type="text" name="numero-documento" id="numero-documento" placeholder="Escribe el número de documento elegido" required pattern="[A-Za-z]+" minlength="2" maxlength="128">
 			 </label>
 
-			 <label for="email">Correo electrónico *
+			 <label for="email" aria-required="true">Correo electrónico *
 				<input type="email" name="email" id="email" placeholder="Escribe el correo electrónico" required>
 			 </label>
 
-			 <label for="telefono">Teléfono (opcional)
+			 <label for="telefono" aria-required="false">Teléfono (opcional)
 				<input type="tel" name="telefono" id="telefono" placeholder="Escribe el teléfono" pattern="[0-9]+" minlength="9" maxlength="10">
 			 </label>
 			 
 			 <fieldset class="radio">
 				 <p>Idioma para la respuesta *</p>
 				 <div>
-				 	<label for="castellano">
+				 	<label for="castellano" aria-required="true">
 						<input type="radio" name="idioma-respuesta" id="castellano" value="castellano" >
 						Castellano
 					</label>
 				 </div>
 				 <div>
-				 	<label for="catalan">
+				 	<label for="catalan" aria-required="true">
 						<input type="radio" name="idioma-respuesta" id="catalan" value="calatan" >
 						Catalán
 					</label>
 				 </div>
 			 </fieldset>
-			 <hr>
-
 			 <fieldset>
-			  <label for="politica-de-privacidad">
+			  <label for="politica-de-privacidad" aria-required="true">
 				<input type="checkbox" name="politica-de-privacidad" id="politica-de-privacidad" required>
 				He leído y acepto la política de privacidad y el aviso legal *
 			  </label>
 			 </fieldset>
 			 
 			 <fieldset>
-			  <label for="ser-informado">
+			  <label for="ser-informado" aria-required="false">
 				  <input type="checkbox" name="ser-informado" id="ser-informado">
 				  Dese ser informado sobre las nuevas incorporaciones al repositorio
 				</label>
 			 </fieldset>
 			 
-			 <input type="submit" name="enviar" class="boton">
+			 <input type="submit" name="enviar" value="Submit" class="boton">
 		</form>
 
 	</section>
